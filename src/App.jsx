@@ -147,7 +147,7 @@ function App() {
             description="Adventure awaits. Plan your next trip with a group of like-minded individuals and make new friends along the way."
           />
         </div>
-        <div className="bg-blue-500 text-white py-20">
+        <div className="bg-gray-900 text-white py-20">
           <Section
             reversed={true}
             imageSrc="waiting"
