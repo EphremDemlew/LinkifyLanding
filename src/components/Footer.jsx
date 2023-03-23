@@ -13,12 +13,22 @@ function Footer() {
   return (
     <div className="relative flex flex-col text-white">
       <div className="h-14">
-        <img src={wave} alt="" className="w-screen absolute" />
+        <img
+          src={wave}
+          alt=""
+          className="w-screen absolute"
+          crossorigin="anonymous"
+        />
       </div>
       <div className="bg-[#082123] w-full h-full mt-24 flex flex-col justify-center">
         <div className="flex w-full justify-between px-60 py-20">
           <div>
-            <img className="h-20 z-20" src={icon} alt="" />
+            <img
+              className="h-20 z-20"
+              src={icon}
+              alt=""
+              crossorigin="anonymous"
+            />
           </div>
           <div className="flex justify-end mr-20 gap-x-20 text-lg w-full">
             <div>

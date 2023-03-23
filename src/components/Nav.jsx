@@ -7,7 +7,7 @@ function Nav() {
     <div className="flex items-center justify-between h-20 w-full relative p-20 ">
       <div className="flex justify-between items-center w-full">
         <div>
-          <img className="h-20" src={icon} alt="" />
+          <img className="h-20" src={icon} alt="" crossorigin="anonymous" />
         </div>
         <div className="hidden sm:flex gap-x-10 text-lg text-white items-center">
           <a href="#home">Home</a>
