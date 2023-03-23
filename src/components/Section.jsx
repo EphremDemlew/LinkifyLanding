@@ -18,12 +18,7 @@ function Section({ reversed, imageSrc, headerTitle, description }) {
         {/* <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-2/5" /> */}
 
         {reversed ? (
-          <img
-            src={`/src/assets/${imageSrc}.svg`}
-            alt=""
-            className="w-2/5"
-            crossorigin="anonymous"
-          />
+          <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-2/5" />
         ) : (
           <>
             <p className="w-3/4 text-2xl text-left">{description}</p>
@@ -33,12 +28,7 @@ function Section({ reversed, imageSrc, headerTitle, description }) {
           {reversed ? (
             <p className="w-3/4 text-2xl font-sans text-left">{description}</p>
           ) : (
-            <img
-              src={`/src/assets/${imageSrc}.svg`}
-              alt=""
-              className="w-3/5"
-              crossorigin="anonymous"
-            />
+            <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-3/5" />
           )}
         </div>
       </div>
