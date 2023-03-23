@@ -1,12 +1,12 @@
 import React from "react";
-import meetImg from "../assets/party.svg";
-import trip from "../assets/trip.svg";
-import hiking from "../assets/hiking.svg";
-import celebration from "../assets/celebration.svg";
-import party from "../assets/party.svg";
-import group from "../assets/group.svg";
-import festival from "../assets/festival.svg";
-import waiting from "../assets/waiting.svg";
+import meetImg from "../party.svg";
+import trip from "../trip.svg";
+import hiking from "../hiking.svg";
+import celebration from "../celebration.svg";
+import party from "../party.svg";
+import group from "../group.svg";
+import festival from "../festival.svg";
+import waiting from "../waiting.svg";
 
 function Section({ reversed, imageSrc, headerTitle, description }) {
   return (
@@ -18,7 +18,7 @@ function Section({ reversed, imageSrc, headerTitle, description }) {
         {/* <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-2/5" /> */}
 
         {reversed ? (
-          <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-2/5" />
+          <img src={`/src/${imageSrc}.svg`} alt="" className="w-2/5" />
         ) : (
           <>
             <p className="w-3/4 text-2xl text-left">{description}</p>
@@ -28,7 +28,7 @@ function Section({ reversed, imageSrc, headerTitle, description }) {
           {reversed ? (
             <p className="w-3/4 text-2xl font-sans text-left">{description}</p>
           ) : (
-            <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-3/5" />
+            <img src={`/src/${imageSrc}.svg`} alt="" className="w-3/5" />
           )}
         </div>
       </div>
