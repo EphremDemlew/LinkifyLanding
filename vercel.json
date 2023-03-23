@@ -1,0 +1,15 @@
+{
+  "build": {
+    "env": {
+      "CI": "false"
+    }
+  },
+  "routes": [
+    {
+      "src": ".*",
+      "headers": {
+        "content-type": "image/svg+xml"
+      }
+    }
+  ]
+}
