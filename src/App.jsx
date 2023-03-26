@@ -62,66 +62,16 @@ function App() {
         </a>
       </div>
 
-      <div className="flex flex-col justify-center items-center pt-32 bg-white text-left relative">
-        <img src={wave} alt="" className="w-screen absolute -top-32 z-10" />
-        <span className="text-5xl w-[85%] text-black mb-20 ">What new</span>
-        <div className="relative flex justify-center items-center w-full ">
-          <UilAngleLeft className="text-black  opacity-50 w-20 h-20 cursor-pointer hover:opacity-100  absolute left-10 top-44" />
-          <div className=" w-[85%] bg-slate-100 p-10 rounded-lg flex gap-x-10 overflow-x-scroll scroll-smooth scrollbar-hide">
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-          </div>
-
-          <UilAngleRight className="text-black  opacity-50 w-20 h-20 cursor-pointer hover:opacity-100  absolute right-10 top-44" />
-        </div>
-      </div>
       <div className="flex flex-col text-left justify-center items-center pt-20 pb-10 bg-white ">
-        <span className="text-5xl w-[80%] text-black mb-20">Trending</span>
+        <span className="text-5xl w-[80%] text-black mb-10">Trending</span>
         <div className="relative flex justify-center items-center w-full ">
-          <div className=" w-[80%] bg-slate-100 p-10 rounded-lg grid grid-cols-4 gap-10  ">
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
-            <div>
-              <Card className="" />
-            </div>
+          <div className="grid grid-cols-4 w-[90%] gap-5 overflow-x-auto">
+            <div className="flex col-span-2 rounded w-[100%]  bg-wendy-pic bg-no-repeat bg-cover bg-center"></div>
+            <div className="flex rounded col-start-3 w-full  row-span-2  bg-main-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-[100%] h-80 bg-photo1-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-[100%] h-80 bg-event-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-[100%] h-80 bg-photo2-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-[100%] h-80 bg-photo3-pic bg-no-repeat bg-cover bg-top"></div>
           </div>
         </div>
       </div>
@@ -179,46 +129,131 @@ function App() {
           Voluptate.
         </h1>
         <div className="flex gap-x-20 justify-center items-center">
-          <div className="w-1/6 rounded-md bg-darkBG-2 h-[420px] flex justify-center items-center">
-            <h1 className="text-black font-bold text-xl ">Lorem</h1>
+          <div className="w-1/6 rounded-md bg-orange-400 h-[420px] flex justify-center items-center hover:bg-darkBG-2        text-white cursor-pointer hover:ease-in  ">
+            <h1 className=" font-bold text-xl ">Business</h1>
           </div>
-          <div className="w-1/6 rounded-md bg-darkBG-2 h-[420px] flex justify-center items-center">
-            <h1 className="text-black font-bold text-xl ">Lorem</h1>
+          <div className="w-1/6 rounded-md bg-mainTed h-[420px] flex justify-center items-center hover:bg-darkBG-2     text-white cursor-pointer ">
+            <h1 className=" font-bold text-xl ">Entertainment</h1>
           </div>
-          <div className="w-1/6 rounded-md bg-darkBG-2 h-[420px] flex justify-center items-center">
-            <h1 className="text-black font-bold text-xl ">Lorem</h1>
+          <div className="w-1/6 rounded-md bg-teal-400 h-[420px] flex justify-center items-center hover:bg-darkBG-2      text-white cursor-pointer">
+            <h1 className=" font-bold text-xl ">Education</h1>
           </div>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center text-black py-20">
         <h1 className="text-darkBG text-5xl py-10 font-Lobster">Categories</h1>
-        <div className="grid grid-cols-4 grid-rows-10 w-80% gap-x-20  py-14">
-          <div className="w-56 rounded-md bg-orange-2 h-56 flex justify-center items-center">
-            <p>Lorem</p>
+        <div className="grid grid-cols-4 grid-rows-10 w-[80%] gap-x-16  py-14">
+          <div
+            style={{
+              backgroundImage: `url(https://images.pexels.com/photos/668295/pexels-photo-668295.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+            }}
+            className="w-64 bg-cover  rounded-md  h-64 flex justify-center items-center shadow-lg cursor-pointer "
+          >
+            <p className="w-full h-full hover:bg-orange-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Art & Entertainment
+            </p>
           </div>
-          <div className="w-56 mt-20 rounded-md bg-white h-56 flex justify-center items-center">
-            <p className="text-black">Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
+            }}
+            className="w-64 mt-20 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-green-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Sport & Fitness
+            </p>
           </div>
-          <div className="w-56 rounded-md bg-green-2 h-56 flex justify-center items-center">
-            <p>Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+            }}
+            className="w-64 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-green-2/40 flex justify-center items-center rounded-md text-black font-bold">
+              Education
+            </p>
           </div>
-          <div className="w-56 mt-20 rounded-md bg-brown-2 h-56 flex justify-center items-center">
-            <p>Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+            }}
+            className="w-64 mt-20 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-brown-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Business
+            </p>
           </div>
-          <div className="w-56 rounded-md bg-green-2 h-56 flex justify-center items-center">
-            <p>Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://img.freepik.com/free-photo/high-angle-shot-delicious-traditional-ethiopian-food-with-vegetables-wooden-surface_181624-35933.jpg)`,
+            }}
+            className="w-64 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-green-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Food & Drink
+            </p>
           </div>
-          <div className="w-56 mt-20 rounded-md bg-white h-56 flex justify-center items-center">
-            <p className="text-black">Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://news-ug.churchofjesuschrist.org/media/orig/Ethiopia_Patients_waiting_for_lunch.png)`,
+            }}
+            className="w-64 mt-20 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-green-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Charity & Causes
+            </p>
           </div>
-          <div className="w-56 rounded-md bg-orange-2 h-56 flex justify-center items-center">
-            <p>Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://gdb.voanews.com/65c072cc-5de3-4552-88dd-08533ab37bd0_w1200_r1.jpg)`,
+            }}
+            className="w-64 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-green-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Community
+            </p>
           </div>
-          <div className="w-56 mt-20 rounded-md bg-brown-2 h-56 flex justify-center items-center">
-            <p>Lorem</p>
+          <div
+            style={{
+              backgroundImage: `url(https://ak.picdn.net/shutterstock/videos/1046533549/thumb/1.jpg?ip=x480)`,
+            }}
+            className="w-64 mt-20 rounded-md bg-cover h-64 flex justify-center items-center shadow-lg cursor-pointer hover:"
+          >
+            <p className="w-full h-full hover:bg-brown-2/40 flex justify-center items-center rounded-md text-white font-bold">
+              Family & Kids
+            </p>
           </div>
         </div>
       </div>
+      {/* <div className="flex flex-col justify-center items-center text-black py-20">
+        <h1 className="text-darkBG text-5xl py-10 font-Lobster">Categories</h1>
+        <div className="grid grid-cols-4 grid-rows-10 w-80% gap-x-20  py-14">
+          <div className="w-64 rounded-md bg-orange-2h4-56 flex justify-center items-center">
+            <p>Lorem</p>
+          </div>
+          <div className="w-64 mt-20 rounded-md bg-white h-64 flex justify-center items-center">
+            <p className="text-black">Lorem</p>
+          </div>
+          <div className="w-64 rounded-md bg-green-2 -456 flex justify-center items-center">
+            <p>Lorem</p>
+          </div>
+          <div className="w-64 mt-20 rounded-md bg-brown-2 -456 flex justify-center items-center">
+            <p>Lorem</p>
+          </div>
+          <div className="w-64 rounded-md bg-green-2 -456 flex justify-center items-center">
+            <p>Lorem</p>
+          </div>
+          <div className="w-64 mt-20 rounded-md bg-white h-64 flex justify-center items-center">
+            <p className="text-black">Lorem</p>
+          </div>
+          <div className="w-64 rounded-md bg-orange-2h4-56 flex justify-center items-center">
+            <p>Lorem</p>
+          </div>
+          <div className="w-64 mt-20 rounded-md bg-brown-2 -456 flex justify-center items-center">
+            <p>Lorem</p>
+          </div>
+        </div>
+      </div> */}
       <div className="flex flex-col justify-center items-center gap-y-10 py-10  text-black">
         <p className="text-4xl w-[50%] font-Lobster">
           Love to hear from you,

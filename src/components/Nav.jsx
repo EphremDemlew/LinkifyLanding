@@ -14,13 +14,13 @@ function Nav() {
           <a href="#about">About</a>
           <a href="#contact">Contact Us</a>
           <a
-            href="#"
+            href="http://localhost:5173/login"
             className="border-[1px] border-danger rounded px-10 py-3 hover:bg-danger"
           >
             Login
           </a>
           <a
-            href="#"
+            href="http://localhost:5173/signup"
             className=" bg-danger border-[1px] border-danger hover:bg-opacity-90 rounded px-10 py-3"
           >
             Sign up
