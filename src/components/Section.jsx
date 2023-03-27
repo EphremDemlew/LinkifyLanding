@@ -1,12 +1,12 @@
 import React from "react";
-import meetImg from "../party.svg";
-import trip from "../trip.svg";
-import hiking from "../hiking.svg";
-import celebration from "../celebration.svg";
-import party from "../party.svg";
-import group from "../group.svg";
-import festival from "../festival.svg";
-import waiting from "../waiting.svg";
+import meetImg from "../party.svg?url";
+import trip from "../trip.svg?url";
+import hiking from "../hiking.svg?url";
+import celebration from "../celebration.svg?url";
+import party from "../party.svg?url";
+import group from "../group.svg?url";
+import festival from "../festival.svg?url";
+import waiting from "../waiting.svg?url";
 
 function Section({ reversed, imageSrc, headerTitle, description }) {
   return (
