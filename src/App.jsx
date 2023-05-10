@@ -26,7 +26,7 @@ function App() {
         {/* <img src={mainBG} alt="" className="absolute h-screen w-screen " /> */}
         <Nav />
         <div className="w-[90%] h-full text-center flex flex-col gap-y-20  gap-x-20 justify-center items-center text-2xl md:text-3xl lg:text-7xl font-Lobster  ">
-          <div className="flex flex-col justify-center items-center  ">
+          <div className="flex flex-col justify-center items-center ">
             <h1 className="relative  leading-relaxed rounded-full px-20 pt-5 bg-black bg-opacity-40 mt-20">
               We make connecting with people
               <span className="  lg:pl-10 w-full flex flex-col justify-center  mb-5">
@@ -54,14 +54,14 @@ function App() {
         <span className="text-5xl w-[80%] text-black mb-10 font-Lobster">
           Trending
         </span>
-        <div className="relative flex justify-center items-center w-full ">
-          <div className="grid grid-cols-1 lg:grid-cols-4 w-[90%] gap-5 overflow-x-auto">
-            <div className="flex lg:col-span-2 rounded w-[100%]  bg-wendy-pic bg-no-repeat bg-cover bg-center"></div>
-            <div className="flex rounded col-start-3 w-full  lg:row-span-2  bg-main-pic bg-no-repeat bg-cover bg-top"></div>
-            <div className="flex rounded w-[100%] h-80 bg-photo1-pic bg-no-repeat bg-cover bg-top"></div>
-            <div className="flex rounded w-[100%] h-80 bg-event-pic bg-no-repeat bg-cover bg-top"></div>
-            <div className="flex rounded w-[100%] h-80 bg-photo2-pic bg-no-repeat bg-cover bg-top"></div>
-            <div className="flex rounded w-[100%] h-80 bg-photo3-pic bg-no-repeat bg-cover bg-top"></div>
+        <div className="lg:relative flex justify-center items-center w-full ">
+          <div className="grid grid-cols-1 lg:grid-cols-4  w-[90%] gap-5 overflow-x-auto">
+            <div className="flex lg:col-span-2 rounded w-full h-80 lg:h-auto bg-wendy-pic bg-no-repeat bg-cover bg-center"></div>
+            <div className="flex rounded lg:col-start-3 w-full h-80 lg:h-auto  lg:row-span-2  bg-main-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-full h-80 bg-photo1-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-full h-80 bg-event-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-full h-80 bg-photo2-pic bg-no-repeat bg-cover bg-top"></div>
+            <div className="flex rounded w-full h-80 bg-photo3-pic bg-no-repeat bg-cover bg-top"></div>
           </div>
         </div>
       </div>
@@ -114,15 +114,15 @@ function App() {
         </div>
       </div>
       <div className="py-20 flex flex-col gap-y-10">
-        <h1 className="text-black text-3xl text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicinging eelit <br />
-          Voluptate.
+        <h1 className="text-black text-3xl text-center font-Lobster">
+          Some of the many major sectors that need <br />
+          <span className="text-mainTed">linkify .</span>
         </h1>
         <div className="flex gap-x-20 gap-y-5 justify-center items-center flex-wrap">
           <div className="w-72 rounded-md bg-orange-400 h-[420px] flex justify-center items-center hover:bg-darkBG-2        text-white cursor-pointer hover:ease-in  ">
             <h1 className=" font-bold text-xl ">Business</h1>
           </div>
-          <div className="w-72 rounded-md bg-mainTed h-[420px] flex justify-center items-center hover:bg-darkBG-2     text-white cursor-pointer ">
+          <div className="w-72 rounded-md bg-mainTed h-[420px] flex  justify-center items-center hover:bg-darkBG-2     text-white cursor-pointer ">
             <h1 className=" font-bold text-xl ">Entertainment</h1>
           </div>
           <div className="w-72 rounded-md bg-teal-400 h-[420px] place-self-start flex justify-center items-center hover:bg-darkBG-2      text-white cursor-pointer">
@@ -215,35 +215,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div className="flex flex-col justify-center items-center text-black py-20">
-        <h1 className="text-darkBG text-5xl py-10 font-Lobster">Categories</h1>
-        <div className="grid grid-cols-4 grid-rows-10 w-80% gap-x-20  py-14">
-          <div className="w-64 rounded-md bg-orange-2h4-56 flex justify-center items-center">
-            <p>Lorem</p>
-          </div>
-          <div className="w-64 xl:mt-20 rounded-md bg-white h-64 flex justify-center items-center">
-            <p className="text-black">Lorem</p>
-          </div>
-          <div className="w-64 rounded-md bg-green-2 -456 flex justify-center items-center">
-            <p>Lorem</p>
-          </div>
-          <div className="w-64 xl:mt-20 rounded-md bg-brown-2 -456 flex justify-center items-center">
-            <p>Lorem</p>
-          </div>
-          <div className="w-64 rounded-md bg-green-2 -456 flex justify-center items-center">
-            <p>Lorem</p>
-          </div>
-          <div className="w-64 xl:mt-20 rounded-md bg-white h-64 flex justify-center items-center">
-            <p className="text-black">Lorem</p>
-          </div>
-          <div className="w-64 rounded-md bg-orange-2h4-56 flex justify-center items-center">
-            <p>Lorem</p>
-          </div>
-          <div className="w-64 xl:mt-20 rounded-md bg-brown-2 -456 flex justify-center items-center">
-            <p>Lorem</p>
-          </div>
-        </div>
-      </div> */}
+
       <div className="flex flex-col justify-center items-center gap-y-10 py-10  text-black">
         <p className="text-4xl w-[50%] font-Lobster">
           Love to hear from you,
