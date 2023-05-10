@@ -20,8 +20,6 @@ function Section({ reversed, imageSrc, headerTitle, description }) {
           reversed ? "flex-col" : "flex-col-reverse"
         }   md:flex-row  w-[80%] justify-center items-center gap-y-10`}
       >
-        {/* <img src={`/src/assets/${imageSrc}.svg`} alt="" className="w-2/5" /> */}
-
         {reversed ? (
           <img
             src={`/src/assets/svg/${imageSrc}.svg`}
